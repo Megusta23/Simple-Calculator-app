@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator app</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="margin-container">
+      <form name="calculator">
+        <input type="text" name="display" id="display" disabled />
+        <div class="container">
+          <button type="button" value="7" onclick="addToDisplay(this.value)">
+            7
+          </button>
+          <button type="button" value="8" onclick="addToDisplay(this.value)">
+            8
+          </button>
+          <button type="button" value="9" onclick="addToDisplay(this.value)">
+            9
+          </button>
+          <button
+            class="operator"
+            type="button"
+            value="+"
+            onclick="addToDisplay(this.value)"
+          >
+            +
+          </button>
+          <button type="button" value="4" onclick="addToDisplay(this.value)">
+            4
+          </button>
+          <button type="button" value="5" onclick="addToDisplay(this.value)">
+            5
+          </button>
+          <button type="button" value="6" onclick="addToDisplay(this.value)">
+            6
+          </button>
+          <button
+            class="operator"
+            type="button"
+            value="-"
+            onclick="addToDisplay(this.value)"
+          >
+            -
+          </button>
+          <button type="button" value="1" onclick="addToDisplay(this.value)">
+            1
+          </button>
+          <button type="button" value="2" onclick="addToDisplay(this.value)">
+            2
+          </button>
+          <button type="button" value="3" onclick="addToDisplay(this.value)">
+            3
+          </button>
+          <button
+            class="operator"
+            type="button"
+            value="*"
+            onclick="addToDisplay(this.value)"
+          >
+            *
+          </button>
+          <button type="button" value="0" onclick="addToDisplay(this.value)">
+            0
+          </button>
+          <button type="button" value="." onclick="addToDisplay(this.value)">
+            .
+          </button>
+          <button class="equal" type="button" value="=" onclick="calculate()">
+            =
+          </button>
+          <button
+            class="operator"
+            type="button"
+            value="/"
+            onclick="addToDisplay(this.value)"
+          >
+            /
+          </button>
+        </div>
+
+        <button type="button" value="clear" onclick="clearDisplay()">
+          Clear
+        </button>
+      </form>
+    </div>
+    <!-- App functionality -->
+    <script src="/script.js"></script>
+  </body>
+</html>
